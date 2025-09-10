@@ -1,0 +1,73 @@
+.text-decoration-none{
+    color:#49361b;
+    font-size: 25px;
+    margin-right: 20px;
+    
+}
+a:hover{
+   background-color: #e0b79e; 
+}
+.col-4 offset-2{
+
+}
+.text-start{
+    float: left;
+}
+/* Style du bouton hamburger */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #42312b;
+}
+button{
+    background-color:#e0b79e;
+    color: #42312b;
+    
+}
+h1.fw-bold{
+    color:#e0b79e;
+}
+.my-progress {
+  background-color:#e0b79e !important ; 
+}
+.btn{
+    background-color: #e0b79e !important;
+    width: 150px;
+    margin-left: 15px;
+    color: white !important;
+}
+.per{
+    margin-left: 15px;
+}
+.w-100{
+    border: none;
+    border-radius: 7px;
+    height: 40px;
+    color: white;
+}
+
+.col-12 a i {
+  color: #e0b79e; 
+}
+.col-12 a:hover i {
+  color: white !important; 
+}
+.bi{
+    color: #e0b79e;
+
+}
+.lienfooter{
+    color: #49361b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+footer .col-6{
+    color: #49361b !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
