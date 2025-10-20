@@ -71,3 +71,157 @@ footer .col-6{
     font-size: 18px;
 }
 
+
+
+
+
+@media (max-width: 992px) {
+  /* Enlever les marges inutiles */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ajuste la taille du texte et des boutons */
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  button,
+  .btn {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 1rem;
+    
+    
+  }
+  button,
+.btn,
+.mon-experience-btn {
+  display: block;
+  margin: 20px auto; /* centre horizontalement */
+  text-align: center;
+}
+
+  /* Image de profil plus petite */
+  #moi img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Empile les colonnes au lieu de les mettre côte à côte */
+  .row {
+    flex-direction: column !important;
+  }
+
+  .col-6, .col-4, .col-3, .col-md-6, .col-md-4, .col-md-7 {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto !important;
+  }
+
+  /* Réduit les images dans les sections de projets */
+  #porfolio img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Les cartes prennent toute la largeur */
+  #porfolio .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* ✅ NAVIGATION RESPONSIVE */
+  nav .col-6 {
+    display: none; /* On cache le menu desktop */
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: -10px;
+    z-index: 1000;
+  }
+
+  /* ✅ Menu mobile */
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #e0b79e;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 0;
+    color: #49361b;
+    font-size: 20px;
+  }
+
+  .menu a:hover {
+    background-color: #e0b79e;
+    color: white;
+  }
+
+  /* Ajustement des sections */
+  section {
+    padding: 30px 10px;
+  }
+
+  /* Footer */
+  footer .row {
+    text-align: center;
+  }
+
+  footer img {
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  footer .col-6, footer .col-4, footer .col-12 {
+    text-align: center;
+  }
+
+  footer .bi {
+    font-size: 1.5rem;
+  }
+}
+
+/* ✅ Ultra petits écrans (ex. téléphones anciens) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+}
+
