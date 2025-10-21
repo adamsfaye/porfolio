@@ -99,8 +99,9 @@ footer .col-6{
 .btn,
 .mon-experience-btn {
   display: block;
-  margin: 20px auto; /* centre horizontalement */
+  margin : 20px auto; /* centre horizontalement */
   text-align: center;
+ 
 }
 
   /* Image de profil plus petite */
@@ -160,6 +161,14 @@ footer .col-6{
     padding: 20px 0;
     border-top: 2px solid #e0b79e;
   }
+  @media (max-width: 768px) {
+  nav .col-6 a {
+    display: block;
+    margin: 10px 0;
+    
+  }
+}
+
 
   .menu.active {
     display: flex;
@@ -224,4 +233,69 @@ footer .col-6{
     font-size: 18px;
   }
 }
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    z-index: 1000;
+    background: #fff;
+  }
+
+  /* Menu caché par défaut */
+  nav .col-6 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  /* Quand le menu est ouvert */
+  nav .col-6.open {
+    display: flex;
+  }
+
+  /* Liens plus petits pour le mobile */
+  nav .col-6 a {
+    font-size: 16px;
+    color: #49361b;
+    padding: 10px 0;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav .col-6 a:hover {
+    color: #c7926a;
+  }
+
+  /* Bouton hamburger */
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    /* right: 28px; */
+    left: 120px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1200;
+  }
+
+  /* Animation du menu */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+}
+
 
